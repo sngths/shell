@@ -1,0 +1,43 @@
+'系统当前时间：'2016年11月12日 星期六 08时41分19秒 CST
+tianxing console  Nov  9 15:16 
+tianxing ttys000  Nov  9 15:16 
+tianxing ttys001  Nov 12 08:20 
+/Users/tianxing/Desktop/shell
+out.txt
+test.sh
+c
+asd
+asd
+a
+c
+'
+asd'as d'
+out.txt
+test.sh
+aaaa
+aa
+break 1
+break 2 跳出两级循环
+continue
+./test.sh
+213
+123
+
+
+
+3
+2
+1
+不包含路径的脚本名：test.sh
+$2的值为:123
+共有2个参数
+213
+123
+213不是参数
+123不是参数
+用户名：asd  密码：asd
+total 16
+drwxr-xr-x   4 tianxing  staff   136 11 12 08:27 .
+drwx------+ 98 tianxing  staff  3332 11 12 08:29 ..
+-rw-r--r--   1 tianxing  staff   475 11 12 08:41 out.txt
+-rwxr-xr-x   1 tianxing  staff  1976 11 12 08:41 test.sh
