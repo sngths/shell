@@ -1,0 +1,57 @@
+ _______  _______  _______
+(  ____ \(  ____ \(  ____ \
+| (    \/| (    \/| (    \/
+| (__    | (_____ | |
+|  __)   (_____  )| |
+| (            ) || |
+| )      /\____) || (____/\
+|/       \_______)(_______/
+2016-11-12 15:37:40.032  INFO 6168 --- [           main] fsc.Application                          : Starting Application on iMac.local with PID 6168 (started by tianxing in /Users/tianxing/Desktop/shell/test)
+2016-11-12 15:37:40.060  INFO 6168 --- [           main] fsc.Application                          : No active profile set, falling back to default profiles: default
+2016-11-12 15:37:41.356  INFO 6168 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32398973: startup date [Sat Nov 12 15:37:41 CST 2016]; root of context hierarchy
+2016-11-12 15:37:50.029  INFO 6168 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$cac3a780] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-12 15:37:54.875  INFO 6168 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-11-12 15:37:54.959  INFO 6168 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-11-12 15:37:54.961  INFO 6168 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-11-12 15:37:59.855  INFO 6168 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-11-12 15:37:59.855  INFO 6168 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 18546 ms
+2016-11-12 15:38:00.895  INFO 6168 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-12 15:38:00.906  INFO 6168 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-12 15:38:00.926  INFO 6168 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-12 15:38:00.926  INFO 6168 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-12 15:38:00.926  INFO 6168 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-12 15:38:01.521  INFO 6168 --- [ost-startStop-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [423] milliseconds.
+2016-11-12 15:38:02.290  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32398973: startup date [Sat Nov 12 15:37:41 CST 2016]; root of context hierarchy
+2016-11-12 15:38:02.427  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/reply],methods=[GET],consumes=[application/json]}" onto public entity.transfer.response.ReplySend controller.AssignmentController.getReply(java.lang.String,java.lang.String,java.lang.String)
+2016-11-12 15:38:02.429  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/assignment/list],methods=[GET],consumes=[application/json]}" onto public java.util.List<entity.transfer.response.AssignmentSend> controller.AssignmentController.getAssignmentList(java.lang.String,java.lang.String,java.lang.String)
+2016-11-12 15:38:02.430  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/assignment/upload],methods=[POST],consumes=[application/json]}" onto public void controller.AssignmentController.uploadAssignment(java.lang.String,entity.transfer.received.AssignmentReceived)
+2016-11-12 15:38:02.430  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/reply/list],methods=[GET],consumes=[application/json]}" onto public java.util.List<entity.info.StudentInfo> controller.AssignmentController.getReplyStudentList(java.lang.String,java.lang.String)
+2016-11-12 15:38:02.430  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/reply/upload],methods=[POST],consumes=[application/json]}" onto public entity.transfer.response.ReplySend controller.AssignmentController.uploadReply(java.lang.String,java.lang.String,entity.transfer.received.ReplyReceived)
+2016-11-12 15:38:02.431  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment/upload],methods=[POST],consumes=[application/json]}" onto public void controller.AssignmentController.uploadComment(java.lang.String,entity.transfer.Comment)
+2016-11-12 15:38:02.432  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/image/{imageName:.+}],methods=[GET]}" onto public void controller.FileDownloadController.imgageDownload(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-12 15:38:02.432  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/large],methods=[GET]}" onto public void controller.FileDownloadController.largeFileDownload()
+2016-11-12 15:38:02.433  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[GET]}" onto public entity.assignemnt.Image controller.FileUploadController.provideUploadInfo()
+2016-11-12 15:38:02.433  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[POST],consumes=[multipart/form-data]}" onto public entity.assignemnt.Image controller.FileUploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2016-11-12 15:38:02.434  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST],consumes=[multipart/form-data]}" onto public entity.assignemnt.Image controller.FileUploadController.imageUpload(org.springframework.web.multipart.MultipartFile)
+2016-11-12 15:38:02.438  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/info],methods=[GET],consumes=[application/json]}" onto public entity.transfer.response.StudentInfoResponse controller.LoginController.getStudentInfo(java.lang.String)
+2016-11-12 15:38:02.441  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/teacher/info],methods=[GET],consumes=[application/json]}" onto public entity.transfer.response.TeacherInfoResponse controller.LoginController.getTeacherInfo(java.lang.String)
+2016-11-12 15:38:02.441  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST],consumes=[application/json]}" onto public entity.transfer.response.TeacherLoginInfo controller.LoginController.login(entity.transfer.received.UsernameAndPassword)
+2016-11-12 15:38:02.443  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mlogin],methods=[POST],consumes=[application/json]}" onto public entity.transfer.response.LoginInfoResponse controller.LoginController.userLogin(entity.transfer.received.UsernameAndPassword)
+2016-11-12 15:38:02.444  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public entity.transfer.response.TeacherLoginInfo controller.LoginController.loginTest()
+2016-11-12 15:38:02.445  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test],methods=[GET],consumes=[application/json]}" onto public entity.transfer.received.UsernameAndPassword controller.TestController.getUsernameAndPassword()
+2016-11-12 15:38:02.449  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-12 15:38:02.449  INFO 6168 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-12 15:38:02.564  INFO 6168 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-12 15:38:02.564  INFO 6168 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-12 15:38:02.671  INFO 6168 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-12 15:38:02.751  WARN 6168 --- [           main] o.s.b.a.t.ThymeleafAutoConfiguration     : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2016-11-12 15:38:04.136  INFO 6168 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-11-12 15:38:04.148  INFO 6168 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2016-11-12 15:38:04.149  INFO 6168 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-11-12 15:38:04.409  INFO 6168 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-11-12 15:38:04.416  INFO 6168 --- [           main] fsc.Application                          : Started Application in 25.658 seconds (JVM running for 28.431)
+2016-11-12 15:38:34.833  INFO 6168 --- [       Thread-4] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32398973: startup date [Sat Nov 12 15:37:41 CST 2016]; root of context hierarchy
+2016-11-12 15:38:34.853  INFO 6168 --- [       Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2016-11-12 15:38:34.853  INFO 6168 --- [       Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2016-11-12 15:38:34.856  INFO 6168 --- [       Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+服务端已关闭

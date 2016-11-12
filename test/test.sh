@@ -162,19 +162,27 @@ ls -al | while read line; do
 	
 done
 
-
+#全局变量 可在函数内部访问
+temp1="temp1"
 
 
 #函数
 function func1 {
-	echo "func1函数"
+	#局部变量 只可在函数内部访问
+    local temp2="temp2"
+	echo "函数$0  参数1：$1"
+	echo "$temp1"
 	#返回状态码
 	return 0
 }
 
 #函数执行完毕后获得状态码
-func1
+func1 $name
 echo "函数结束状态码：$?"
+
+#引用函数库
+. ../libs/myfuncs
+func1
 
 
 
