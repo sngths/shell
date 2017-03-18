@@ -30,4 +30,4 @@ fi
 
 #隐藏方式读取
 read -s -p "请输入密码" password
-echo \n$password
+echo $password

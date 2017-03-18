@@ -1,0 +1,17 @@
+total 8
+drwxr-xr-x  4 tianxing  staff  136  3 18 08:45 .
+drwxr-xr-x  8 tianxing  staff  272  3 17 14:55 ..
+-rw-rw-rw-  1 tianxing  staff    0  3 18 09:37 output.log
+-rwxr-xr-x  1 tianxing  staff  549  3 18 09:37 output.sh
+tianxing console  Mar 10 09:48 
+tianxing ttys001  Mar 15 08:40 
+ls: asd: No such file or directory
+output.log
+output.sh
+/Users/tianxing/Desktop/shell-demo/demo/output
+total 16
+drwxr-xr-x  4 tianxing  staff  136  3 18 08:45 .
+drwxr-xr-x  8 tianxing  staff  272  3 17 14:55 ..
+-rw-rw-rw-  1 tianxing  staff  389  3 18 09:37 output.log
+-rwxr-xr-x  1 tianxing  staff  549  3 18 09:37 output.sh
+
